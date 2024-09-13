@@ -1,0 +1,13 @@
+.az-bg-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.az-object-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
