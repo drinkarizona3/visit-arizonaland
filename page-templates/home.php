@@ -9,9 +9,7 @@
 <main id="site-main"
  class="mt-5">
 
-  <?php get_template_part('az-hero'); ?>
-
-  
+  <?php get_template_part('template-parts/az-hero'); ?>
 
 </main>
 
