@@ -7,10 +7,6 @@ $bg_image = $hero['bg_image'];
 
 ?>
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, molestias ratione qui consequatur adipisci ullam et quisquam ab corrupti neque blanditiis? Voluptatum itaque iusto aliquam iste dolorem, debitis et quod.
-
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, molestias ratione qui consequatur adipisci ullam et quisquam ab corrupti neque blanditiis? Voluptatum itaque iusto aliquam iste dolorem, debitis et quod.
 <section class="az-hero">
   
   <?php if($bg_image): ?>
