@@ -5,8 +5,6 @@
   $form_embed_id = $az_sign_up['form_embed_id'];
   $wave_classes = ['az-wave top', 'az-wave bottom'];
   $floater_ids = [61,56];
-
-  var_dump($az_sign_up);
 ?>
 
 <section class="az-sign-up" style="background-color: <?= $az_sign_up['section_color'] ?>;">
