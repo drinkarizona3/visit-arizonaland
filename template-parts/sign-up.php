@@ -1,6 +1,6 @@
 <?php
 
-  $az_sign_up = get_field('az_sign_up');
+  $az_sign_up = get_field('az_signup');
   $headline = $az_sign_up['headline'];
   $form_embed_id = $az_sign_up['form_embed_id'];
   $wave_classes = ['az-wave top', 'az-wave bottom'];
