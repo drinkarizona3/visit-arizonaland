@@ -4,9 +4,12 @@
   --az-header-height: 56px;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: var(--az-font-body);
-  font-size: 1.4rem;
 }
 
 h1, h2, h3, h4, h4, h5 {
