@@ -9,8 +9,6 @@
   var_dump($az_sign_up);
 ?>
 
-
-
 <section class="az-sign-up" style="background-color: <?= $az_sign_up['section_color'] ?>;">
 
   <?php 
