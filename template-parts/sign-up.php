@@ -20,7 +20,7 @@
     foreach($floater_ids as $floater_id): 
         $floater_info = az_get_image_data($floater_id);
       ?>
-        <figure class="position-absolute">
+        <figure class="position-absolute <?= $floater_info['description'] ?>">
           <?= wp_get_attachment_image($floater_id, 'medium', array(
             $loading => 'lazy'
           )); ?>
