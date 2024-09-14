@@ -7,7 +7,7 @@
   $floater_ids = [61,56];
 ?>
 
-<section class="az-sign-up" style="background-color: <?= $az_sign_up['section_color'] ?>;">
+<section class="az-sign-up position-relative overflow-hidden" style="background-color: <?= $az_sign_up['section_color'] ?>;">
 
   <?php 
     foreach($wave_classes as $wave_class): ?>
@@ -30,14 +30,22 @@
     endforeach; 
   ?>
 
-  <?php if ($headline): ?>
-    <h2 class="az-sign-up__headline az-font-xl"><?= $az_sign_up['headline'] ?></h2>
-  <?php endif; ?>
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-sm">
 
-  <?php if($form_embed_id): ?>
-    <div class="az-sign-up__form">
-    <div class="klaviyo-form-XMrwhj"></div>
+        <?php if ($headline): ?>
+          <h2 class="az-sign-up__headline az-font-xl"><?= $az_sign_up['headline'] ?></h2>
+        <?php endif; ?>
+      
+        <?php if($form_embed_id): ?>
+          <div class="az-sign-up__form">
+            <div class="klaviyo-form-XMrwhj"></div>
+          </div>
+        <?php endif; ?>
+        
+      </div>
     </div>
-  <?php endif; ?>
-  
+  </div>
+
 </section>
