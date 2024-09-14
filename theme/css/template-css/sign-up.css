@@ -1,0 +1,47 @@
+
+.az-sign-up > .az-inner {
+  padding: max(7%, 100px) 0;
+}
+
+.az-smiley, .az-can {
+  z-index: 2;
+}
+
+.az-can img, .az-smiley img {
+  width: 100%;
+  height: auto;
+}
+
+.az-sign-up__floater.az-smiley {
+  right: 0;
+  top: 0;
+  z-index: 2;
+  transform: translate(-50%,-40%);
+  width: 100%;
+  max-width: clamp(170px, 40vw, 214px);
+}
+
+.az-sign-up__floater.az-can {
+  top: auto;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  max-width: clamp(100px, 30vw, 170px);
+  transform: translate(20%, 40%);
+}
+
+.az-wave {
+  width: 100%;
+}
+
+.az-wave.top {
+  top: 0;
+  transform: translate(-10%, -50%);
+}
+
+.az-wave.bottom {
+  top: auto;
+  bottom: 0;
+  transform: translate(0, 60%);
+}
+

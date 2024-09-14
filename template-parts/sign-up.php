@@ -7,13 +7,15 @@
   $floater_ids = [61,56];
 ?>
 
-<section class="az-sign-up" style="background-color: <?= $az_sign_up['section_color'] ?>;">
+<section class="az-sign-up position-relative" style="background-color: <?= $az_sign_up['section_color'] ?>;">
+
+  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/template-css/sign-up.css">
 
   <?php    
     foreach($floater_ids as $floater_id): 
         $floater_info = az_get_image_data($floater_id);
       ?>
-        <figure class="position-absolute <?= $floater_info['description'] ?>">
+        <figure class="az-sign-up__floater position-absolute <?= $floater_info['description'] ?>">
           <?= wp_get_attachment_image($floater_id, 'medium', array(
             'loading' => 'lazy'
           )); ?>
