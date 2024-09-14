@@ -13,3 +13,16 @@
   height: 100%;
   width: 100%;
 }
+
+.az-grid {
+  display: grid;
+}
+
+.az-grid.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.az-grid .grid-cover {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
