@@ -7,25 +7,29 @@ $bg_image = $hero['bg_image'];
 
 ?>
 
-<section class="az-hero">
+<section class="az-hero az-grid col-2">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/template-css/hero.css">
   
   <?php if($bg_image): ?>
-    <div class="az-hero__background">
+    <div class="az-hero__background grid-cover">
       <?= wp_get_attachment_image( $bg_image['ID'], null, null, array(
         'class' => 'az-object-fit'
       )); ?>
     </div>
   <?php endif; ?>
 
-  <div class="az-hero__text">
+  <div class="az-hero__text d-flex flex-column justify-content-center align-items-center grid-cover">
     <?php if($lockup): ?>
-      <?= wp_get_attachment_image($lockup['ID'], 'medium'); ?>
+      <div class="az-hero__lockup">
+        <?= wp_get_attachment_image($lockup['ID'], 'medium'); ?>
+      </div>
     <?php endif; ?>
   
     <?php if($content): ?>
-      <?= $content; ?>
+      <div class="az-hero__content">
+        <?= $content; ?>
+      </div>
     <?php endif; ?>
   </div>
 
