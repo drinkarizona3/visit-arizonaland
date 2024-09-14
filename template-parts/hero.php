@@ -7,12 +7,12 @@ $bg_image = $hero['bg_image'];
 
 ?>
 
-<section class="az-hero az-grid col-2">
+<section class="az-hero az-grid az-col-2">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/template-css/hero.css">
   
   <?php if($bg_image): ?>
-    <div class="az-hero__background grid-cover">
+    <div class="az-hero__background az-grid-cover">
       <?= wp_get_attachment_image( $bg_image['ID'], null, null, array(
         'class' => 'az-object-fit'
       )); ?>

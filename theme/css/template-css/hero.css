@@ -1,6 +1,4 @@
 .az-hero {
-  display: grid;
-  grid-template-columns: auto;
   min-height: 100svh;
   color: white;
 }
