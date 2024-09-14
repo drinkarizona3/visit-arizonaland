@@ -27,7 +27,7 @@ $bg_image = $hero['bg_image'];
     <?php endif; ?>
   
     <?php if($content): ?>
-      <div class="az-hero__content h2">
+      <div class="az-hero__content">
         <?= $content; ?>
       </div>
     <?php endif; ?>
