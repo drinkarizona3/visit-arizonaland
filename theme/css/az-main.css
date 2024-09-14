@@ -1,6 +1,7 @@
 :root {
   --az-font-body: 'Montserrat', sans-serif;
   --az-font-heading: 'Bebas Neue', var(--az-font-body);  
+  --az-header-height: '56px';
 }
 
 body {
@@ -47,4 +48,8 @@ h1, h2, h3, h4, h4, h5 {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+#site-navbar {
+  height: var(--az-header-height);
 }

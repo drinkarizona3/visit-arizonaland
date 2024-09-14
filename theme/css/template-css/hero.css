@@ -1,4 +1,4 @@
 .az-hero {
-  min-height: 100svh;
+  min-height: calc(100svh - var(--az-header-height));
   color: white;
 }
