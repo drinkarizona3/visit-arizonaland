@@ -2,3 +2,12 @@
   min-height: calc(100svh - var(--az-header-height));
   color: white;
 }
+
+.az-hero__text {
+  padding: max(2vw, 9em) 2% 3vw;
+}
+
+.az-hero__lockup {
+  width: 100%;
+  max-width: clamp(376px, 50vw, 750px);
+}
