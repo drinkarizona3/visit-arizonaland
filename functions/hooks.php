@@ -74,10 +74,10 @@ function b4st_bottomline() {
     <div class="container">
       <div class="row pt-3">
         <div class="col-sm">
-          <p class="text-center text-sm-left">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
+          <p class="text-center text-sm-left text-uppercase">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
         </div>
         <div class="col-sm">
-          <p class="text-center text-sm-right">Designed and Developed by <a href="https://mpirecreative.com" target="_blank" <span style="color: #c51520;">M</span>pirecreative</p>
+          <p class="text-center text-sm-right text-uppercase">Designed and Developed by <a href="https://mpirecreative.com" target="_blank" <span style="color: #c51520;">M</span>pirecreative</a></p>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@
 
 body {
   font-family: var(--az-font-body);
+  font-size: 1.4rem;
 }
 
 h1, h2, h3, h4, h4, h5 {
@@ -51,5 +52,6 @@ h1, h2, h3, h4, h4, h5 {
 }
 
 #site-navbar {
-  height: var(--az-header-height);
+  height: var(--az-header-height, 0px);
+  display: none;
 }
