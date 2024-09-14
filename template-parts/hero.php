@@ -8,6 +8,8 @@ $bg_image = $hero['bg_image'];
 ?>
 
 <section class="az-hero">
+
+  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/template-css/hero.css">
   
   <?php if($bg_image): ?>
     <div class="az-hero__background az-bg-cover">
@@ -17,12 +19,14 @@ $bg_image = $hero['bg_image'];
     </div>
   <?php endif; ?>
 
-  <?php if($lockup): ?>
-    <?= wp_get_attachment_image($lockup['ID']); ?>
-  <?php endif; ?>
-
-  <?php if($content): ?>
-    <?= $content; ?>
-  <?php endif; ?>
+  <div class="az-hero__text">
+    <?php if($lockup): ?>
+      <?= wp_get_attachment_image($lockup['ID'], 'medium'); ?>
+    <?php endif; ?>
+  
+    <?php if($content): ?>
+      <?= $content; ?>
+    <?php endif; ?>
+  </div>
 
 </section>
