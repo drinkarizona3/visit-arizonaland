@@ -37,7 +37,7 @@
         <div class="col-sm">
 
           <?php if ($headline): ?>
-            <h2 class="az-sign-up__headline az-font-xl"><?= $az_sign_up['headline'] ?></h2>
+            <?= $headline ?>
           <?php endif; ?>
         
           <?php if($form_embed_id): ?>

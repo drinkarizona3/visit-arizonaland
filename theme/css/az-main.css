@@ -62,3 +62,14 @@ h1, h2, h3, h4, h4, h5 {
 .az-footer__bottomline {
   font-size: 14px;
 }
+
+
+section.az-sign-up > .az-inner {
+  padding: max(7%, 100px) 0;
+}
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1400px;
+  }
+}
