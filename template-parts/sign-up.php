@@ -22,7 +22,7 @@
       ?>
         <figure class="position-absolute <?= $floater_info['description'] ?>">
           <?= wp_get_attachment_image($floater_id, 'medium', array(
-            $loading => 'lazy'
+            'loading' => 'lazy'
           )); ?>
         </figure>
       <?php 
