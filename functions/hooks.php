@@ -77,7 +77,7 @@ function b4st_bottomline() {
           <p class="text-center text-sm-left">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
         </div>
         <div class="col-sm">
-          <p class="text-center text-sm-right"><a href="https://github.com/SimonPadbury/b4st">b4st</a> theme for WordPress</p>
+          <p class="text-center text-sm-right">Designed and Developed by <a href="https://mpirecreative.com" target="_blank" <span style="color: #c51520;">M</span>pirecreative</p>
         </div>
       </div>
     </div>
