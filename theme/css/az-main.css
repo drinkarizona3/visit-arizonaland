@@ -1,7 +1,7 @@
 :root {
   --az-font-body: 'Montserrat', sans-serif;
   --az-font-heading: 'Bebas Neue', var(--az-font-body);  
-  --az-header-height: '56px';
+  --az-header-height: 56px;
 }
 
 body {
