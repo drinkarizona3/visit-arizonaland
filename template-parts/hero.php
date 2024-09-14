@@ -19,7 +19,7 @@ $bg_image = $hero['bg_image'];
     </div>
   <?php endif; ?>
 
-  <div class="az-hero__text d-flex flex-column justify-content-center align-items-center grid-cover">
+  <div class="az-hero__text d-flex flex-column justify-content-center align-items-center az-grid-cover">
     <?php if($lockup): ?>
       <div class="az-hero__lockup">
         <?= wp_get_attachment_image($lockup['ID'], 'medium'); ?>
