@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 26px;
 }
 
 body {
@@ -57,4 +57,8 @@ h1, h2, h3, h4, h4, h5 {
 #site-navbar {
   height: var(--az-header-height, 0px);
   display: none;
+}
+
+.az-footer__bottomline {
+  font-size: 14px;
 }
