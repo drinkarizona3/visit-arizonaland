@@ -12,7 +12,7 @@ $bg_image = $hero['bg_image'];
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/template-css/hero.css">
   
   <?php if($bg_image): ?>
-    <div class="az-hero__background az-bg-cover">
+    <div class="az-hero__background">
       <?= wp_get_attachment_image( $bg_image['ID'], null, null, array(
         'class' => 'az-object-fit'
       )); ?>
