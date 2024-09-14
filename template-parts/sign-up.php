@@ -1,6 +1,7 @@
 <?php
 
   $az_sign_up = get_field('az_sign_up');
+  $headline = $az_sign_up['headline'];
   $form_embed_id = $az_sign_up['form_embed_id'];
   $wave_classes = ['az-wave top', 'az-wave bottom'];
   $floater_ids = [61,56];
@@ -29,10 +30,14 @@
     endforeach; 
   ?>
 
-  <span class="az-sign-up__headline az-font-xl"><?= $az_sign_up['headline'] ?></span>
+  <?php if ($headline): ?>
+    <span class="az-sign-up__headline az-font-xl"><?= $az_sign_up['headline'] ?></span>
+  <?php endif; ?>
+
   <?php if($form_embed_id): ?>
     <div class="az-sign-up__form">
       <div class="klaviyo-form-<?= $form_embed_id ?>"></div>
     </div>
   <?php endif; ?>
+  
 </section>
