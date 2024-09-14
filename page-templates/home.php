@@ -6,8 +6,7 @@
 ?>
 
 
-<main id="site-main"
- class="mt-5">
+<main id="site-main">
 
   <?php get_template_part('template-parts/hero'); ?>
 
