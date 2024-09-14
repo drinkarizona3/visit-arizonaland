@@ -31,12 +31,12 @@
   ?>
 
   <?php if ($headline): ?>
-    <span class="az-sign-up__headline az-font-xl"><?= $az_sign_up['headline'] ?></span>
+    <h2 class="az-sign-up__headline az-font-xl"><?= $az_sign_up['headline'] ?></h2>
   <?php endif; ?>
 
   <?php if($form_embed_id): ?>
     <div class="az-sign-up__form">
-      <div class="klaviyo-form-<?= $form_embed_id ?>"></div>
+    <div class="klaviyo-form-XMrwhj"></div>
     </div>
   <?php endif; ?>
   
