@@ -10,6 +10,8 @@
 
   <?php get_template_part('template-parts/hero'); ?>
 
+  <?php get_template_part('template-pats/sign-up'); ?>
+
 </main>
 
 <?php 
