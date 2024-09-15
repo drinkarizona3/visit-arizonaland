@@ -86,11 +86,13 @@ a {
   font-family: var(--az-font-heading);
 }
 
-.wp-block-social-links .wp-social-link svg {
-  width: 1.6em;
-  height: 1.6em;
+.wp-container-core-social-links-is-layout-1 {
+  max-width: 10em;
 }
 
+.widget_klaviyo_embedemailsignup_widget {
+  max-width: 350px;
+}
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -98,3 +100,8 @@ a {
   }
 }
 
+@media only screen and (max-width: 850px) {
+  .wp-block-social-links.has-large-icon-size {
+      font-size: 36px;
+  }
+}
