@@ -50,3 +50,12 @@ section.az-sign-up h2 {
   transform: translate(0, 60%);
 }
 
+.az-sign-up__form input {
+  max-width: 550px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+.az-sign-up__form button {
+  padding: .15em 1.5em !important;
+}
