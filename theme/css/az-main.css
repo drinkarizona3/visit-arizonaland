@@ -2,6 +2,10 @@
   --az-font-body: 'Montserrat', sans-serif;
   --az-font-heading: 'Bebas Neue', var(--az-font-body);  
   --az-header-height: 56px;
+  --az-color-body: #000000;
+  --primary: #00C4B2;
+  --secondary: #F45197;
+  --dark: #000000;
 }
 
 html {
@@ -67,6 +71,7 @@ h1, h2, h3, h4, h4, h5 {
 
 .az-footer__bottomline {
   font-size: 14px;
+  font-family: var(--az-font-heading);
 }
 
 
