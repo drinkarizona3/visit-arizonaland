@@ -72,7 +72,7 @@ function b4st_bottomline() {
 	if ( ! has_action('bottomline') ) {
 		?>
     <div class="container az-footer__bottomline text-dark">
-      <div class="row pt-3">
+      <div class="row">
         <div class="col-sm">
           <p class="text-center text-sm-left text-uppercase">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
         </div>
