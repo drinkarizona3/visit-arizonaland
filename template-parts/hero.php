@@ -7,7 +7,7 @@ $bg_image = $hero['bg_image'];
 
 ?>
 
-<section class="az-hero az-grid az-col-2">
+<section class="az-hero az-grid az-col-2 position-relative">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/template-css/hero.css">
   
