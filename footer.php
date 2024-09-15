@@ -1,6 +1,6 @@
 <?php b4st_footer_before();?>
 
-<footer id="site-footer">
+<footer id="site-footer" class="bg-primary">
 
   <div class="container">
 
