@@ -26,13 +26,13 @@
 
 		const blogPosts = $('.az-blog-posts');
 
-		console.log(blogPosts.length)
+		console.log(blogPosts.find('.az-blog-post').length);
 
 		blogPosts.owlCarousel({
 				center: true,
 				items:2,
 				loop:true,
-				margin:10,
+				margin:20,
 				nav: false,
 				dots: false,
 				mouseDrag: true,

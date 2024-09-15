@@ -3,8 +3,22 @@
   color: white;
 }
 
+.az-hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(110, 110,110, .4);
+  z-index: 1;
+}
+
 .az-hero__text {
   padding: max(2vw, 9em) 2% 3vw;
+  z-index: 1;
 }
 
 .az-hero__lockup {

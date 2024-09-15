@@ -16,7 +16,7 @@
 
       <div class="col-sm">
         <?php if($headline): ?>
-          <h2 class="text-center" style="color: var(--secondary);"><?= $headline ?></h2>
+          <h2 class="text-center mb-3" style="color: var(--secondary);"><?= $headline ?></h2>
         <?php endif; ?>
 
         <?php if($content): ?>
