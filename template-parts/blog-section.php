@@ -30,7 +30,7 @@
 
           // The Loop.
           if ( $az_posts->have_posts() ): ?>
-            <div class="az-blog-posts" data-flickity='{ "wrapAround": true }'> <?php
+            <div class="az-blog-posts"> <?php
 
               while ( $az_posts->have_posts() ): $az_posts->the_post();
 
