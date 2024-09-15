@@ -38,7 +38,9 @@
 
                   <div class="az-blog-post">
 
-                    <?php the_post_thumbnail(); ?>
+                    <?php the_post_thumbnail('medium', array(
+                      'class' => 'az-object-fit'
+                    )); ?>
 
                   </div>
                 
