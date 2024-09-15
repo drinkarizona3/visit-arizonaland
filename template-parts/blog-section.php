@@ -10,43 +10,52 @@
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/template-css/blog-section.css">
 
-  <?php if($headline): ?>
-    <h2><?= $headline ?></h2>
-  <?php endif; ?>
+  <div class="container-xl">
 
-  <?php if($content): ?>
-    <?= $content; ?>
-  <?php endif; ?>
+    <div class="row">
 
-  <?php
-    $az_posts = new WP_Query(array(
-      'post_type' => 'post',
-      'posts_per_page' => -1
-    ));
+      <div class="col-sm">
+        <?php if($headline): ?>
+          <h2 class="text-center" style="color: var(--secondary);"><?= $headline ?></h2>
+        <?php endif; ?>
 
-    // The Loop.
-    if ( $az_posts->have_posts() ): ?>
-      <div class="az-blog-posts" data-flickity='{ "wrapAround": true }'> <?php
+        <?php if($content): ?>
+          <?= $content; ?>
+        <?php endif; ?>
 
-        while ( $az_posts->have_posts() ): $az_posts->the_post();
+        <?php
+          $az_posts = new WP_Query(array(
+            'post_type' => 'post',
+            'posts_per_page' => -1
+          ));
 
-          ?>
+          // The Loop.
+          if ( $az_posts->have_posts() ): ?>
+            <div class="az-blog-posts" data-flickity='{ "wrapAround": true }'> <?php
 
-            <div class="az-blog-post">
+              while ( $az_posts->have_posts() ): $az_posts->the_post();
 
-              <?php the_post_thumbnail('medium', array(
-                'class' => 'az-object-fit'
-              )); ?>
+                ?>
 
-            </div>
-          
-          <?php
-        endwhile; ?>
+                  <div class="az-blog-post">
 
-      </div> <?php
-    endif; 
+                    <?php the_post_thumbnail('medium', array(
+                      'class' => 'az-object-fit'
+                    )); ?>
 
-    wp_reset_postdata();
-  ?>
+                  </div>
+                
+                <?php
+              endwhile; ?>
+
+            </div> <?php
+          endif; 
+
+          wp_reset_postdata();
+        ?>
+      </div>
+
+    </div>
+  </div>
 
 </section>
