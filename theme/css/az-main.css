@@ -86,6 +86,11 @@ a {
   font-family: var(--az-font-heading);
 }
 
+.wp-block-social-links .wp-social-link svg {
+  width: 1.6em;
+  height: 1.6em;
+}
+
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
