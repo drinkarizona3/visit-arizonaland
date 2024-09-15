@@ -11,6 +11,8 @@
   <?php get_template_part('template-parts/hero'); ?>
 
   <?php get_template_part('template-parts/sign-up'); ?>
+  
+  <?php get_template_part('template-parts/blog-section'); ?>
 
 </main>
 
