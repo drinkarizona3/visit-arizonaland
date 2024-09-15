@@ -27,7 +27,7 @@
 
   </div>
 
-  <div class="container-xl">
+  <div class="container-xl px-0 px-md-5">
     <div class="row no-gutters">
       <div class="col-sm">
         <?php

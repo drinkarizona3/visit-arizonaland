@@ -35,12 +35,15 @@
 				margin:10,
 				nav: false,
 				dots: false,
+				mouseDrag: true,
+				touchDrag: true,
 				responsive:{
 						768:{
 								items:3,
 								center: false,
 								loop: false,
-								touchDrag: false
+								touchDrag: false,
+								mouseDrag: false
 						}
 				}
 		});

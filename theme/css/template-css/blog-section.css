@@ -1,5 +1,5 @@
 .az-blog-post {
-  height: 600px;
+  height: clamp(300px, 40vw, 600px);
   border-radius: 20px;
   overflow: hidden;
 }
