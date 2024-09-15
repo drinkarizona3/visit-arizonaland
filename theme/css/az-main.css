@@ -27,6 +27,10 @@ h1, h2, h3, h4, h4, h5 {
   font-family: var(--az-font-heading);
 }
 
+a {
+  color: var(--primary);
+}
+
 /* Custom Font */
 @font-face {
   font-family: 'Montserrat';
@@ -67,6 +71,14 @@ h1, h2, h3, h4, h4, h5 {
 #site-navbar {
   height: var(--az-header-height, 0px);
   display: none;
+}
+
+#site-footer {
+  background-color: var(--primary);
+}
+
+#site-footer a {
+  color: var(--az-color-body);
 }
 
 .az-footer__bottomline {
