@@ -30,7 +30,7 @@
 
           // The Loop.
           if ( $az_posts->have_posts() ): ?>
-            <div class="az-blog-posts"> <?php
+            <div class="az-blog-posts owl-carousel owl-theme"> <?php
 
               while ( $az_posts->have_posts() ): $az_posts->the_post();
 

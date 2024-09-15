@@ -24,21 +24,21 @@
 
 		// You can put your own code in here
 
-	});
+		$('.az-blog-posts').owlCarousel({
+				center: true,
+				items:2,
+				loop:true,
+				margin:10,
+				nav: false,
+				dots: false,
+				responsive:{
+						600:{
+								items:3,
+								center: false
+						}
+				}
+		});
 
-	$('.az-blog-posts').owlCarousel({
-    center: true,
-    items:2,
-    loop:true,
-    margin:10,
-		nav: false,
-		dots: false,
-    responsive:{
-        600:{
-            items:3,
-						center: false
-        }
-    }
-});
+	});
 
 }(jQuery));
