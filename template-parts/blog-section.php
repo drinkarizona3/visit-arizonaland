@@ -22,38 +22,45 @@
         <?php if($content): ?>
           <?= $content; ?>
         <?php endif; ?>
-
-        <?php
-          $az_posts = new WP_Query(array(
-            'posts_per_page' => -1
-          ));
-
-          // The Loop.
-          if ( $az_posts->have_posts() ): ?>
-            <div class="az-blog-posts owl-carousel owl-theme"> <?php
-
-              while ( $az_posts->have_posts() ): $az_posts->the_post();
-
-                ?>
-
-                  <div class="az-blog-post">
-
-                    <?php the_post_thumbnail('medium', array(
-                      'class' => 'az-object-fit'
-                    )); ?>
-
-                  </div>
-                
-                <?php
-              endwhile; ?>
-
-            </div> <?php
-          endif; 
-
-          wp_reset_postdata();
-        ?>
       </div>
+    </div>
 
+  </div>
+
+  <div class="container-xl">
+    <div class="row no-gutters">
+      <div class="col-sm">
+        <?php
+            $az_posts = new WP_Query(array(
+              'posts_per_page' => -1,
+              'order'          => 'ASC'
+            ));
+
+            // The Loop.
+            if ( $az_posts->have_posts() ): ?>
+              <div class="az-blog-posts owl-carousel owl-theme"> <?php
+
+                while ( $az_posts->have_posts() ): $az_posts->the_post();
+
+                  ?>
+
+                    <div class="az-blog-post">
+
+                      <?php the_post_thumbnail('medium', array(
+                        'class' => 'az-object-fit'
+                      )); ?>
+
+                    </div>
+                  
+                  <?php
+                endwhile; ?>
+
+              </div> <?php
+            endif; 
+
+            wp_reset_postdata();
+          ?>
+      </div>
     </div>
   </div>
 

@@ -24,7 +24,11 @@
 
 		// You can put your own code in here
 
-		$('.az-blog-posts').owlCarousel({
+		const blogPosts = $('.az-blog-posts');
+
+		console.log(blogPosts.length)
+
+		blogPosts.owlCarousel({
 				center: true,
 				items:2,
 				loop:true,
@@ -32,9 +36,11 @@
 				nav: false,
 				dots: false,
 				responsive:{
-						600:{
+						768:{
 								items:3,
-								center: false
+								center: false,
+								loop: false,
+								touchDrag: false
 						}
 				}
 		});
