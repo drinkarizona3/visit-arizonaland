@@ -13,25 +13,31 @@
 }
 
 .az-sign-up__floater.az-smiley {
-  right: 0;
+  right: 15%;
   top: 0;
   z-index: 2;
-  transform: translate(-50%,-40%);
+  transform: translate(40%, -40%);
   width: 100%;
   max-width: clamp(170px, 40vw, 214px);
 }
 
 .az-sign-up__floater.az-can {
   top: auto;
+  left: 10%;
   bottom: 0;
   z-index: 2;
   width: 100%;
-  max-width: clamp(100px, 30vw, 170px);
-  transform: translate(20%, 40%);
+  max-width: clamp(140px, 30vw, 170px);
+  transform: translate(-50%, 40%);
 }
 
 .az-wave {
   width: 100%;
+}
+
+.az-wave svg {
+  width: 100%;
+  height: auto;
 }
 
 .az-wave.top {

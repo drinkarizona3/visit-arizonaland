@@ -6,7 +6,7 @@
 ?>
 
 
-<main id="site-main">
+<main id="site-main" class="position-relative overflow-hidden">
 
   <?php get_template_part('template-parts/hero'); ?>
 
