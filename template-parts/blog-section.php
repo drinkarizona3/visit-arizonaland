@@ -25,7 +25,6 @@
 
         <?php
           $az_posts = new WP_Query(array(
-            'post_type' => 'post',
             'posts_per_page' => -1
           ));
 
@@ -39,11 +38,7 @@
 
                   <div class="az-blog-post">
 
-                    <?php the_title(); ?>
-
-                    <?php the_post_thumbnail('medium', array(
-                      'class' => 'az-object-fit'
-                    )); ?>
+                    <?php the_post_thumbnail(); ?>
 
                   </div>
                 
