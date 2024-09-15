@@ -8,6 +8,8 @@
 
 <section class="az-blog-section" style="background-color: <?= $blog_section['background_color']; ?>">
 
+  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/template-css/blog-section.css">
+
   <?php if($headline): ?>
     <h2><?= $headline ?></h2>
   <?php endif; ?>
@@ -18,6 +20,7 @@
 
   <?php
     $az_posts = new WP_Query(array(
+      'post_type' => 'post',
       'posts_per_page' => -1
     ));
 
@@ -29,9 +32,11 @@
 
           ?>
 
-            <div class="az-blog-posts">
+            <div class="az-blog-post">
 
-              <?php the_post_thumbnail('medium'); ?>
+              <?php the_post_thumbnail('medium', array(
+                'class' => 'az-object-fit'
+              )); ?>
 
             </div>
           
