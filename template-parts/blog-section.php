@@ -6,7 +6,7 @@
 
 ?>
 
-<section class="az-blog-section" style="background-color: <?= $blog_section['background_color']; ?>">
+<section class="az-blog-section az-pad" style="background-color: <?= $blog_section['background_color']; ?>">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/template-css/blog-section.css">
 

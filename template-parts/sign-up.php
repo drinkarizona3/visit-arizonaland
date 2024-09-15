@@ -24,7 +24,7 @@
     endforeach; 
   ?>
 
-  <div class="az-inner position-relative overflow-hidden">
+  <div class="az-inner position-relative overflow-hidden az-pad">
 
     <?php 
       foreach($wave_classes as $wave_class): ?>

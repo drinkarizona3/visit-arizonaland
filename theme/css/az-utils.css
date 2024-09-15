@@ -2,6 +2,10 @@
   font-size: 4rem;
 }
 
+.az-pad {
+  padding: max(7%, 100px) 0;
+}
+
 .az-bg-cover {
   position: absolute;
   top: 0;
