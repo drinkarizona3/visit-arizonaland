@@ -5,6 +5,7 @@ section.az-sign-up h2 {
 
 .az-smiley, .az-can {
   z-index: 2;
+  pointer-events: none;
 }
 
 .az-can img, .az-smiley img {
@@ -33,6 +34,7 @@ section.az-sign-up h2 {
 
 .az-wave {
   width: 2000px;
+  pointer-events: none;
 }
 
 .az-wave svg {
@@ -42,7 +44,7 @@ section.az-sign-up h2 {
 
 .az-wave.top {
   top: 0;
-  transform: translate(-40%, -30%);
+  transform: translate(-40%, -35%);
 }
 
 .az-wave.bottom {
