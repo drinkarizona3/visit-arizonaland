@@ -42,13 +42,13 @@ section.az-sign-up h2 {
 
 .az-wave.top {
   top: 0;
-  transform: translate(-10%, -50%);
+  transform: translate(-40%, -30%);
 }
 
 .az-wave.bottom {
   top: auto;
   bottom: 0;
-  transform: translate(-10%, 65%);
+  transform: translate(-40%, 60%);
 }
 
 .az-sign-up__form input {
@@ -59,4 +59,18 @@ section.az-sign-up h2 {
 
 .az-sign-up__form button {
   padding: .15em 1.5em !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .az-wave.top {
+    top: 0;
+    transform: translate(-10%, -50%);
+  }
+  
+  .az-wave.bottom {
+    top: auto;
+    bottom: 0;
+    transform: translate(-10%, 65%);
+  }
+  
 }
