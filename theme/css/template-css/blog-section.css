@@ -1,3 +1,7 @@
+.az-blog-section.az-pad {
+  padding: max(7%, 50px) 0;
+}
+
 .az-blog-post {
  /* height: clamp(300px, 40vw, 600px); */
   border-radius: 20px;

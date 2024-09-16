@@ -16,12 +16,17 @@
   z-index: 1;
 }
 
+.az-hero__background img {
+  object-position: 56% bottom;
+}
+
 .az-hero__text {
-  padding: max(2vw, 9em) 2% 3vw;
+  padding: 20vh 2% max(4%, 50px);
   z-index: 1;
 }
 
 .az-hero__lockup {
   width: 100%;
   max-width: clamp(376px, 50vw, 750px);
+  margin-bottom: 5%;
 }

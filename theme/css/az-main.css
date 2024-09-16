@@ -31,6 +31,10 @@ a {
   color: var(--primary);
 }
 
+p {
+  line-height: 1.4;
+}
+
 /* Custom Font */
 @font-face {
   font-family: 'Montserrat';
