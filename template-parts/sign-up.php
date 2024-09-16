@@ -44,7 +44,7 @@
           <?php endif; ?>
 
           <?php if ($form_title): ?>
-            <p class="az-sign-up__form-title"><?= $form_title ?></p>
+            <p class="az-sign-up__form-title text-center text-white" style="font-weight: 500;"><?= $form_title ?></p>
           <?php endif; ?>
         
           <?php if($form_embed_id): ?>
