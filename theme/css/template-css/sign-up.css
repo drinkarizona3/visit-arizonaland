@@ -63,6 +63,10 @@ section.az-sign-up h2 {
   padding: .15em 1.5em !important;
 }
 
+.go1057092283.go1057092283.go1057092283 :not(a) {
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
   .az-wave.top {
     top: 0;
