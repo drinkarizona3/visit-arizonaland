@@ -1,6 +1,6 @@
 section.az-sign-up h2 {
   font-size: clamp(2.5rem, 7vw, 4rem);
-  margin-top: .5em;
+  margin-top: .25em;
 }
 
 .az-smiley, .az-can {
@@ -32,7 +32,7 @@ section.az-sign-up h2 {
 }
 
 .az-wave {
-  width: max(1300px, 115vw);
+  width: 2000px;
 }
 
 .az-wave svg {
@@ -71,6 +71,10 @@ section.az-sign-up h2 {
     top: auto;
     bottom: 0;
     transform: translate(-10%, 65%);
+  }
+
+  .az-wave {
+    width: max(1300px, 115vw);
   }
   
 }
