@@ -42,7 +42,7 @@
 
                 while ( $az_posts->have_posts() ): $az_posts->the_post();
 
-                    $az_external_link = get_field('az_post_data')['link'];
+                    $az_external_link = get_field('az_post_data', $post->ID )['link'];
                     $thumbnail = get_the_post_thumbnail('medium');
                     $blog_item_class = 'az-blog-post'; ?>
 
