@@ -15,7 +15,7 @@ function az_get_external_post_link($az_post_data) {
 
     $external_link = $az_post_data['link'];
 
-    if ($external_link) return false;
+    if (!$external_link) return false;
 
     $link_target = $external_link['target'] ? $external_link['target'] : '_self';
 
