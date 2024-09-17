@@ -44,15 +44,12 @@
 
                     $az_post_data = get_field('az_post_data', $post->ID );
 
-                    echo '<pre>';
-                    echo print_r($az_post_data); 
-                    echo '</pre>';
-                    
+
                     $az_external_link = $az_post_data['link'];
                     $thumbnail = get_the_post_thumbnail($post->ID, 'medium');
                     $blog_item_class = 'az-blog-post'; 
             
-                    if ($az_external_link): 
+                    if ($az_post_data && $az_external_link): 
                   
                         $link_target = $az_external_link['target'] ? $az_external_link['target'] : '_self';
                       ?>
