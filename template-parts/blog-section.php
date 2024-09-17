@@ -43,26 +43,26 @@
                 while ( $az_posts->have_posts() ): $az_posts->the_post();
 
                     $az_post_data = get_field('az_post_data', $post->ID );
-
-
-                    $az_external_link = $az_post_data['link'];
                     $thumbnail = get_the_post_thumbnail($post->ID, 'medium');
                     $blog_item_class = 'az-blog-post'; 
             
                     if ($az_post_data && $az_external_link): 
-                  
+
+                        $az_external_link = $az_post_data['link'];
                         $link_target = $az_external_link['target'] ? $az_external_link['target'] : '_self';
                       ?>
-
                         <a href="<?= $az_external_link['url'] ?>" target="<?= $link_target ?>" class="<?= $blog_item_class ?>">
                           <?= $thumbnail ?>
                         </a> 
-                        
-                        <?php else: ?>
-
+                      <?php 
+                      
+                    else: 
+                      
+                      ?>
                         <div class="az-blog-post" class="<?= $blog_item_class ?>">
                           <?= $thumbnail ?>
-                        </div> <?php
+                        </div> 
+                      <?php
 
                     endif; 
 
