@@ -53,7 +53,7 @@ section.az-sign-up h2 {
   transform: translate(-40%, 60%);
 }
 
-.az-sign-up__form input, .az-sign-up__form div[role="list-box"], .az-sign-up__form textarea {
+.az-sign-up__form input, .az-sign-up__form div[role=list-box], .az-sign-up__form textarea {
   max-width: 550px !important;
   margin: 0 auto !important;
   width: 100% !important;
