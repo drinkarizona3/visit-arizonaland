@@ -46,21 +46,25 @@
                     $thumbnail = get_the_post_thumbnail($post->ID, 'medium');
                     $blog_item_class = 'az-blog-post'; 
             
-                    if ($az_post_data && $az_external_link): 
+                    if ($az_post_data):  
 
-                        $az_external_link = $az_post_data['link'];
-                        $link_target = $az_external_link['target'] ? $az_external_link['target'] : '_self';
-                      ?>
+                      $az_external_link = $az_post_data['link'];
+
+                      if ($az_external_link): 
+                        
+                        $link_target = $az_external_link['target'] ? $az_external_link['target'] : '_self'; ?>
+
                         <a href="<?= $az_external_link['url'] ?>" target="<?= $link_target ?>" class="<?= $blog_item_class ?>">
-                          <?= $thumbnail ?>
-                        </a> 
-                      <?php 
+                          <?= $thumbnail; ?>
+                        </a> <?php
+
+                      endif;
                       
                     else: 
                       
                       ?>
                         <div class="az-blog-post" class="<?= $blog_item_class ?>">
-                          <?= $thumbnail ?>
+                          <?= $thumbnail; ?>
                         </div> 
                       <?php
 
