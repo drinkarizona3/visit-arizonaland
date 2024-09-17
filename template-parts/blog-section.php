@@ -44,8 +44,7 @@
 
                     $az_external_link = get_field('az_post_data')['link'];
                     $thumbnail = get_the_post_thumbnail('medium');
-                    $blog_item_class = 'az-blog-post';
-                  ?>
+                    $blog_item_class = 'az-blog-post'; ?>
 
                     <?php 
                     
@@ -54,21 +53,22 @@
                           $link_target = $az_external_link['target'] ? $az_external_link['target'] : '_self';
                         ?>
 
-                        <a href="<?= $az_external_link['url'] ?>" target="<?= $link_target ?>" class="<?= $blog_item_class ?>">
-                          <?= $thumbnail ?>
-                        </a> <?php 
-                      
-                      else: ?>
+                          <a href="<?= $az_external_link['url'] ?>" target="<?= $link_target ?>" class="<?= $blog_item_class ?>">
+                            <?= $thumbnail ?>
+                          </a> 
+                          
+                          <?php else: ?>
 
-                        <div class="az-blog-post" class="<?= $blog_item_class ?>">
-                          <?= $thumbnail ?>
-                        </a> <?php
+                          <div class="az-blog-post" class="<?= $blog_item_class ?>">
+                            <?= $thumbnail ?>
+                          </div> <?php
 
                       endif; 
 
                 endwhile; ?>
 
               </div> <?php
+
             endif; 
 
             wp_reset_postdata();
