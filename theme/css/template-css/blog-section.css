@@ -14,9 +14,9 @@ span.see-more-link {
   color: white;
   position: absolute;
   top: auto;
-  bottom: 2%;
   left: auto;
-  right: 0;
+  right: .25em;
+  bottom: .25em;
   font-family: var(--az-font-heading);
   background-color: var(--secondary);
   line-height: .9;
