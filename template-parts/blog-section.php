@@ -51,7 +51,7 @@
 
                         <a href="<?= $external_link['link'] ?>" target="<?= $external_link['target'] ?>" class="<?= $blog_item_class ?>">
                           <?= $thumbnail ?>
-                          <span class="see-more-link">See All <i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                          <span class="see-more-link"><? ($external_link['title']) ? $external_link['title'] : 'Read More' ?> <i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </a>  
 
                         <?php else: ?>

@@ -20,6 +20,7 @@ function az_get_external_post_link($az_post_data) {
     $link_target = $external_link['target'] ? $external_link['target'] : '_self';
 
     return array(
+      'title' => $external_link['title'],
       'link' => $external_link['url'],
       'target' => $link_target
     );
