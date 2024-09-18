@@ -7,11 +7,3 @@
   border-radius: 20px;
   overflow: hidden;
 }
-
-.az-blog-post i {
-  color: white;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  text-shadow: 0 .05em .075em #010101b5;
-}
