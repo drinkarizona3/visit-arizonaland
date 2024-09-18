@@ -26,8 +26,6 @@
 
 		const blogPosts = $('.az-blog-posts');
 
-		console.log(blogPosts.find('.az-blog-post').length);
-
 		blogPosts.owlCarousel({
 				center: true,
 				items:2,
@@ -42,8 +40,8 @@
 								items:3,
 								center: false,
 								loop: false,
-								touchDrag: false,
-								mouseDrag: false
+								touchDrag: (blogPosts.find('.az-blog-post').length > 3) ? true : false,
+								mouseDrag: (blogPosts.find('.az-blog-post').length > 3) ? true : false
 						}
 				}
 		});

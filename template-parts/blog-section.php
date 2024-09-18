@@ -51,6 +51,7 @@
 
                         <a href="<?= $external_link['link'] ?>" target="<?= $external_link['target'] ?>" class="<?= $blog_item_class ?>">
                           <?= $thumbnail ?>
+                          <span class="see-more-link">See More <i class="fa-light fa-arrow-right"></i></span>
                         </a>  
 
                         <?php else: ?>
@@ -58,7 +59,7 @@
                         <div class="<?= $blog_item_class ?>">
                           <?= $thumbnail ?>
                         </div>  <?php   
-                        
+
                       endif;
 
                 endwhile; ?>
