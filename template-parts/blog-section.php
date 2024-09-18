@@ -44,7 +44,7 @@
 
                     $az_post_data = get_field('az_post_data', $post->ID );
                     $thumbnail = get_the_post_thumbnail($post->ID, 'medium');
-                    $blog_item_class = 'az-blog-post position-relative';
+                    $blog_item_class = 'az-blog-post';
                     $external_link = az_get_external_post_link($az_post_data); 
                     
                       if ($external_link): ?>
