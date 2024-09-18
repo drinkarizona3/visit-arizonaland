@@ -24,7 +24,7 @@ span.see-more-link {
   border-radius: 10px;
   border: .15em solid #f4ef22;
   letter-spacing: .025em;
-  font-size: clamp(.9rem, 1.6vw, 1.2rem) !important;
+  font-size: 1.4rem;
 }
 
 span.see-more-link i {
