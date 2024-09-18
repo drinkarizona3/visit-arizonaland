@@ -44,14 +44,14 @@
 
                     $az_post_data = get_field('az_post_data', $post->ID );
                     $thumbnail = get_the_post_thumbnail($post->ID, 'medium');
-                    $blog_item_class = 'az-blog-post';
+                    $blog_item_class = 'az-blog-post position-relative';
                     $external_link = az_get_external_post_link($az_post_data); 
                     
                       if ($external_link): ?>
 
                         <a href="<?= $external_link['link'] ?>" target="<?= $external_link['target'] ?>" class="<?= $blog_item_class ?>">
                           <?= $thumbnail ?>
-                          <span class="see-more-link">See More <i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                          <span class="see-more-link">See All <i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </a>  
 
                         <?php else: ?>

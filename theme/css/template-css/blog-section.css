@@ -3,7 +3,30 @@
 }
 
 .az-blog-post {
- /* height: clamp(300px, 40vw, 600px); */
   border-radius: 20px;
   overflow: hidden;
+  text-decoration: none !important;
+}
+
+
+span.see-more-link {
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top: auto;
+  bottom: 2%;
+  left: auto;
+  right: 0;
+  font-family: var(--az-font-heading);
+  background-color: var(--secondary);
+  line-height: .9;
+  padding: .20em .35em;
+  border-radius: 10px;
+  border: .15em solid #f4ef22;
+  letter-spacing: .025em;
+  font-size: clamp(.9rem, 1.6vw, 1.2rem) !important;
+}
+
+span.see-more-link i {
+  font-size: 98%;
 }
