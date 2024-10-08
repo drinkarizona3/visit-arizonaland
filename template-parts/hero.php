@@ -19,7 +19,7 @@ $slideshow_images = $hero['slideshow'];
           foreach ($slideshow_images as $i => $image): ?>
             <div class="az-slideshow__item">
               <picture>
-                  <source class="owl-lazy" media="(min-width: 1200px)" data-srcset="<?= $image['sizes']['az-xl']; ?>" data-src-retina="<?= $image['sizes']['az-xl']; ?>" >
+                  <source class="owl-lazy" media="(min-width: 1200px)" data-srcset="<?= $image['sizes']['az-large']; ?>" data-src-retina="<?= $image['sizes']['az-xl']; ?>" >
                   <source class="owl-lazy" media="(min-width: 768px)" data-srcset="<?= $image['sizes']['medium_large']; ?>" data-src-retina="<?= $image['sizes']['large']; ?>" >
                   <img class="owl-lazy az-object-fit" data-src="<?= $image['sizes']['az-small']; ?>" data-src-retina="<?= $image['sizes']['medium_large']; ?>" alt="<?= $image['alt']; ?>">
               </picture>
