@@ -51,6 +51,7 @@
 
 		$('.az-slideshow').owlCarousel({
 			items: 1,
+			loop: true,
 			nav: false,
 			dots: true,
 			lazyLoad: true,
