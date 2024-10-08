@@ -49,6 +49,16 @@
 				}
 		});
 
+		$('.az-slideshow').owlCarousel({
+			items: 1,
+			nav: false,
+			dots: true,
+			lazyLoad: true,
+			animateOut: 'fadeOut',
+			autoplay:true,
+			autoplayTimeout:5000
+		})
+
 	});
 
 }(jQuery));

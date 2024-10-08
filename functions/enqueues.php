@@ -17,12 +17,6 @@ if ( ! function_exists('b4st_enqueues') ) {
 		wp_register_style('owl-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', false, '2.3.4', null);
 		wp_enqueue_style('owl-carousel-css');
 
-		wp_register_style('owl-carousel-css-default', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', false, '2.3.4', null);
-		wp_enqueue_style('owl-carousel-css-default');
-
-		wp_register_style('owl-carousel-css-main', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', false, '2.3.4', null);
-		wp_enqueue_style('owl-carousel-css-main');
-
 		wp_enqueue_style( 'gutenberg-blocks', get_template_directory_uri() . '/theme/css/blocks.css' );
 
 		wp_register_style('theme', get_template_directory_uri() . '/theme/css/b4st.css', false, null);
