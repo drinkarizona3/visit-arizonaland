@@ -24,6 +24,31 @@
 
 		// You can put your own code in here
 
+		const blogPosts = $('.az-blog-posts');
+
+		blogPosts.owlCarousel({
+				center: true,
+				items:2,
+				loop:true,
+				autoplay:true,
+				autoplayTimeout:5000,
+				autoplayHoverPause:false,
+				margin:20,
+				nav: false,
+				dots: false,
+				mouseDrag: true,
+				touchDrag: true,
+				responsive:{
+						768:{
+								items:3,
+								center: false,
+								loop: false,
+								touchDrag: (blogPosts.find('.az-blog-post').length > 3) ? true : false,
+								mouseDrag: (blogPosts.find('.az-blog-post').length > 3) ? true : false
+						}
+				}
+		});
+
 	});
 
 }(jQuery));

@@ -1,0 +1,33 @@
+.az-hero {
+  min-height: calc(100svh - var(--az-header-height, 0px));
+  color: white;
+}
+
+.az-hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  /* background: rgba(110, 110,110, .4); */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 22.13%, rgba(0, 0, 0, 0.20) 100%);
+  z-index: 1;
+}
+
+.az-hero__background img {
+  object-position: 56% bottom;
+}
+
+.az-hero__text {
+  padding: 20vh 2% max(4%, 50px);
+  z-index: 1;
+}
+
+.az-hero__lockup {
+  width: 100%;
+  max-width: clamp(376px, 50vw, 750px);
+  margin-bottom: 5%;
+}

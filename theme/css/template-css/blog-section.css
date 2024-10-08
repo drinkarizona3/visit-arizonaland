@@ -1,0 +1,33 @@
+.az-blog-section.az-pad {
+  padding: max(7%, 50px) 0;
+}
+
+.az-blog-post {
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none !important;
+  display:block;
+}
+
+
+span.see-more-link {
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: .25em;
+  bottom: .25em;
+  font-family: var(--az-font-heading);
+  background-color: var(--secondary);
+  line-height: .9;
+  padding: .20em .35em;
+  border-radius: 10px;
+  border: .15em solid #f4ef22;
+  letter-spacing: .025em;
+  font-size: var(.9em, 2.6vw, 1.4rem) !important;
+}
+
+span.see-more-link i {
+  font-size: 98%;
+}

@@ -1,0 +1,86 @@
+section.az-sign-up h2 {
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  margin-top: .25em;
+}
+
+.az-smiley, .az-can {
+  z-index: 2;
+  pointer-events: none;
+}
+
+.az-can img, .az-smiley img {
+  width: 100%;
+  height: auto;
+}
+
+.az-sign-up__floater.az-smiley {
+  right: 15%;
+  top: 0;
+  z-index: 2;
+  transform: translate(40%, -40%);
+  width: 100%;
+  max-width: clamp(170px, 40vw, 214px);
+}
+
+.az-sign-up__floater.az-can {
+  top: auto;
+  left: 10%;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  max-width: clamp(150px, 50vw, 200px);
+  transform: translate(-50%, 50%);
+}
+
+.az-wave {
+  width: 2000px;
+  pointer-events: none;
+}
+
+.az-wave svg {
+  width: 100%;
+  height: auto;
+}
+
+.az-wave.top {
+  top: 0;
+  transform: translate(-40%, -35%);
+}
+
+.az-wave.bottom {
+  top: auto;
+  bottom: 0;
+  transform: translate(-40%, 60%);
+}
+
+div[data-testid="form-row"]:not(:last-of-type) {
+  max-width: 550px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+.az-sign-up__form button {
+  padding: .15em 1.5em !important;
+}
+
+.go1057092283.go1057092283.go1057092283 :not(a) {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .az-wave.top {
+    top: 0;
+    transform: translate(-10%, -50%);
+  }
+  
+  .az-wave.bottom {
+    top: auto;
+    bottom: 0;
+    transform: translate(-10%, 65%);
+  }
+
+  .az-wave {
+    width: max(1300px, 115vw);
+  }
+  
+}

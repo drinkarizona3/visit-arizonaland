@@ -1,0 +1,37 @@
+.az-font-xl {
+  font-size: 4rem;
+}
+
+.az-pad {
+  padding: max(7%, 100px) 0;
+}
+
+.az-bg-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.az-object-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.az-grid {
+  display: grid;
+}
+
+.az-grid.az-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.az-grid .az-grid-cover {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  max-height: 100svh;
+}

@@ -71,13 +71,13 @@ function b4st_footer_after() {
 function b4st_bottomline() {
 	if ( ! has_action('bottomline') ) {
 		?>
-    <div class="container">
-      <div class="row pt-3">
+    <div class="container az-footer__bottomline text-dark">
+      <div class="row">
         <div class="col-sm">
-          <p class="text-center text-sm-left">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
+          <p class="text-center text-sm-left text-uppercase">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
         </div>
         <div class="col-sm">
-          <p class="text-center text-sm-right"><a href="https://github.com/SimonPadbury/b4st">b4st</a> theme for WordPress</p>
+          <p class="text-center text-sm-right text-uppercase">Designed and Developed by <a href="https://mpirecreative.com" target="_blank" ><span style="color: #c51520;">M</span>pirecreative</a></p>
         </div>
       </div>
     </div>

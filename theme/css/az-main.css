@@ -1,0 +1,117 @@
+:root {
+  --az-font-body: 'Montserrat', sans-serif;
+  --az-font-heading: 'Bebas Neue', var(--az-font-body);  
+  --az-header-height: 56px;
+  --az-color-body: #000000;
+  --primary: #00C4B2;
+  --secondary: #F45197;
+  --dark: #000000;
+}
+
+html {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+body {
+  font-family: var(--az-font-body);
+}
+
+h1, h2, h3, h4, h4, h5 {
+  line-height: 1 !important;
+  font-family: var(--az-font-heading);
+}
+
+a {
+  color: var(--primary);
+}
+
+p {
+  line-height: 1.4;
+}
+
+/* Custom Font */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('./fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('./fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Medium.woff2') format('woff2'),
+      url('./fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./fonts/BebasNeue-Regular.woff2') format('woff2'),
+      url('./fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#site-navbar {
+  height: var(--az-header-height, 0px);
+  display: none;
+}
+
+#site-footer {
+  background-color: var(--primary);
+}
+
+#site-footer a {
+  color: var(--az-color-body);
+}
+
+.az-footer__bottomline {
+  font-size: 14px;
+  font-family: var(--az-font-heading);
+}
+
+.wp-container-core-social-links-is-layout-1 {
+  max-width: 10em;
+}
+
+.widget_klaviyo_embedemailsignup_widget {
+  max-width: 350px;
+}
+
+@media (min-width: 768px) {
+  .az-footer-block__logo {
+    border-right: 1px solid #343a40;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1400px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .wp-block-social-links {
+      font-size: 36px !important;
+  }
+}
