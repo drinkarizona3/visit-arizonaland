@@ -57,9 +57,9 @@
 			lazyLoad: true,
 			animateOut: 'fadeOut',
 			autoplay:true,
-			autoplayTimeout:5000
-		})
-
+			autoplayTimeout:3500
+		});
+		
 	});
 
 }(jQuery));
