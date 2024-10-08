@@ -56,7 +56,7 @@
 			dots: true,
 			lazyLoad: true,
 			animateOut: 'fadeOut',
-			autoplay:true,
+			//autoplay:true,
 			autoplayTimeout:5000
 		})
 
