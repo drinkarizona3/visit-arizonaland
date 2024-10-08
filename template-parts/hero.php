@@ -16,7 +16,7 @@ $slideshow_images = $hero['slideshow'];
     <div class="az-hero__background az-grid-cover">
       <div class="az-slideshow owl-carousel owl-default">
         <?php
-          foreach ($slideshow_images as $i => $images): ?>
+          foreach ($slideshow_images as $i => $image): ?>
             <div class="az-slideshow__item">
               <?= wp_get_attachment_image($image['id'], 'az-xl') ?>
             </div> <?php
