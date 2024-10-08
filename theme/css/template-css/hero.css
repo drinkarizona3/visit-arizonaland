@@ -31,3 +31,11 @@
   max-width: clamp(376px, 50vw, 750px);
   margin-bottom: 5%;
 }
+
+.az-slideshow, 
+.az-slideshow .owl-stage-outer, 
+.az-slideshow .owl-stage, 
+.az-slideshow .owl-item, 
+.az-slideshow__item {
+  height: 100%;
+}
