@@ -17,7 +17,7 @@
   z-index: 1;
 }
 
-.az-hero__background img {
+.az-hero__background img.az-bg__image {
   object-position: 56% bottom;
 }
 

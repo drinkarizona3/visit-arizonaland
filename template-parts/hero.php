@@ -7,7 +7,7 @@ $bg_image = $hero['bg_image'];
 $slideshow_images = $hero['slideshow'];
 ?>
 
-<section class="az-hero az-grid az-col-2 position-relative">
+<section class="az-hero az-grid az-col-2 position-relative overflow-hidden">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/template-css/hero.css">
   
@@ -18,7 +18,11 @@ $slideshow_images = $hero['slideshow'];
         <?php
           foreach ($slideshow_images as $i => $image): ?>
             <div class="az-slideshow__item">
-              <?= wp_get_attachment_image($image['id'], 'az-xl') ?>
+              <picture class="az-object-fit">
+                  <source class="owl-lazy" media="(min-width: 1200px)" data-srcset="<?= $image['sizes']['az-xl']; ?>" data-src-retina="<?= $image['sizes']['az-xl']; ?>" >
+                  <source class="owl-lazy" media="(min-width: 768px)" data-srcset="<?= $image['sizes']['medium_large']; ?>" data-src-retina="<?= $image['sizes']['large']; ?>" >
+                  <img class="owl-lazy" data-src="<?= $image['sizes']['az-small']; ?>" data-src-retina="<?= $image['sizes']['medium']; ?> alt="<?= $image['alt']; ?>">
+              </picture>
             </div> <?php
           endforeach;
         ?>
@@ -31,7 +35,7 @@ $slideshow_images = $hero['slideshow'];
 
       <div class="az-hero__background az-grid-cover">
         <?= wp_get_attachment_image( $bg_image['ID'], null, null, array(
-          'class' => 'az-object-fit'
+          'class' => 'az-object-fit az-bg__image az-bg__custom'
         )); ?>
       </div>
 
@@ -39,7 +43,7 @@ $slideshow_images = $hero['slideshow'];
 
       <div class="az-hero__background az-grid-cover">
         <?php the_post_thumbnail('az-xl', array(
-          'class' => 'az-object-fit'
+          'class' => 'az-object-fit az-bg__image az-bg__featured-image'
         )); ?>
       </div>
 
